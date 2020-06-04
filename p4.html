@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Database Systems</title>
+</head>
+<body>
+	<h1>Database Systems</h1>
+	<h2>links</h2>
+	<ul>
+  <li><a href="index.html">main page</a></li>
+  <li><a href="p1.html">Summary of database systems</a></li>
+  <li><a href="p2.html">Statistics on database systems</a></li>
+   <li><a href="p3.html">Curves about Database systems</a></li>
+   <li><a href="p4.html">Database design</a></li>
+</ul>
+Suppose a university wants to create an information system to track participation in student clubs. 
+ From this,the design team learns that the goal of implementing the system is to give better insight into how the university funds clubs.
+ Using this information, the design team determines that the following tables need to be created:
+ After interviewing several people,the design team learns that the goal of implementing the system is to give better insight into 
+ how the university funds clubs. This will be accomplished by tracking how many members each club has and how active the clubs are.
+ this will track the club name,the club president, and a short description of the club.Students: student name, e-mail, and year of birth.
+ the design team learns that the goal of implementing the system is to give better insight into how the university funds clubs. 
+Memberships: this table will correlate students with clubs, allowing us to have any given student join multiple clubs.
+ Events: this table will track when the clubs meet and how many students showed up.
+Now that the design team has determined which tables to create, they need to define the specific information that each table will hold.
+ This requires identifying the fields that will be in each table. For example, Club Name would be one of the fields in the Clubs table.
+ First Name and Last Name would be fields in the Students table.
+Finally, since this will be a relational database, every table should have a field in common with at least one other table 
+ (in other words: they should have a relationship with each other).
+ In order to properly create this relationship, a primary key must be selected for each table.
+ This key is a unique identifier for each record in the table. For example, in the Students table, 
+ it might be possible to use students’ last name as a way to uniquely identify them. 
+However, it is more than likely that some students will share a last name (like Rodriguez, Smith, or Lee), so a different field should be selected.
+ A student’s e-mail address might be a good choice for a primary key, since e-mail addresses are unique.
+ However, a primary key cannot change, so this would mean that if students changed their e-mail address we would have to remove them
+ from the database and then re-insert them – not an attractive proposition. 
+ Our solution is to create a value for each student that will act as a primary key. We will also do this for each of the student clubs.
+ This solution is quite common and is the reason you have so many user IDs!
+</body>
+</html>
